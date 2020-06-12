@@ -27,8 +27,8 @@ class com.abc.A {
 那么生成的Dart类为：
 ```dart
 class com_abc_A {
-    Future<com_abc_A> create__() async { ... }
-    Future<com_abc_A> create__String(String arg) async { ... }
+    static Future<com_abc_A> create__() async { ... }
+    static Future<com_abc_A> create__String(String arg) async { ... }
 }
 ```
 
