@@ -42,3 +42,5 @@ export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 ### Android端报`Suggestion: add 'tools:replace="android:label"' to <application> element at AndroidManifest.xml:26:5 to override`
 
 这种情况都是你依赖的aar里的AndroidManifest.xml里也配置了`android:label`导致, 按照报错信息的提示, 在宿主app的AndroidManifest.xml的application标签下添加`tools:replace="android:label"`即可, 注意还需要添加`tools`的命名空间`xmlns:tools="http://schemas.android.com/tools"`.
+
+### Tried to automatically register plugins with FlutterEngine (io.flutter.embedding.engine.FlutterEngine@4b28f02) but could not find and invoke the GeneratedPluginRegistrant.
